@@ -547,7 +547,6 @@ img{
     text-align: center;
 }
 .radio{
-    background: gray;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -556,7 +555,7 @@ img{
     border-radius: 5px;
 }
 .ones{
-    background: purple;
+    background: gray;
 }
 .one{
     display: flex;
@@ -595,3 +594,27 @@ img{
         width: 100%;
     }
 } */
+
+/* #animal:checked ~ .images > img:not([class *="animal"]),
+#cars:checked ~ .images > img:not([class *="cars"]),
+#sites:checked ~ .images > img:not([class *="sites"]),
+#tech:checked ~ .images > img:not([class *="tech"]){
+    width: 0px;
+    height: 0px;
+} */
+
+/* for background on selected */
+/* #all:checked ~ .all,
+#animal:checked ~ .animal,
+#cars:checked ~ .cars,
+#sites:checked ~ .sites,
+#tech:checked ~ .tech
+{
+    background-color: #333;
+    color: white;
+} */
+
+#mtn:checked ~ .num:nth-child(1),
+#voda:checked ~ .num:nth-child(2){
+    background: red;
+}
